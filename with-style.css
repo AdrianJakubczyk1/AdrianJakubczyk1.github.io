@@ -94,6 +94,13 @@ body { min-height: 100%; display: flex; justify-content: space-between; }
   transform: translate(-50%, -50%);
 }
 
+.center-top{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .hidden{
   display:none
 
@@ -177,7 +184,7 @@ body { min-height: 100%; display: flex; justify-content: space-between; }
     h1 {
       font-family: gibson, Avenir Next, sans-serif;
       font-weight: 90;
-      font-size: 4%;
+      font-size: 2vh;
       letter-spacing: 2px;
       word-spacing: 3px;
       line-height: 1;
