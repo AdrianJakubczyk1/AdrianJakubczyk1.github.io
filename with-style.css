@@ -1,0 +1,175 @@
+html { background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) 96.2%); height: 100%; }
+body { min-height: 100%; display: flex; justify-content: space-between; }
+
+/* .left-upper {
+    margin: 0 170vh 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.left-top{
+    margin: 0 170vh 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+} */
+
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  $col-bg: #FFC568;
+  $col-lttr: #763C8C;
+  $col-line: #FFFFFF;
+  $to-mobile: 520px;
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    min-height: 100vh;
+    @include flex-center();
+    
+    font-size: 62.5%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    @media screen and (max-width: $to-mobile) {
+      /* don't know how to set default units to rem in mojs :(( */
+    }
+  }
+  
+  .container {
+    width: 50rem;
+    height: 20rem;
+    position: relative;
+  }
+  
+  .svg-container {
+    z-index: 2;
+    position: absolute;
+  }
+  
+  .mo-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .line {
+    fill: none;
+    stroke: $col-line;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+  }
+  
+  .lttr {
+    fill: $col-lttr;
+  }
+  
+  .sound {
+    position: fixed;
+    color: $col-lttr;
+    font-size: 1.6rem;
+    bottom: 1rem;
+    right: 1rem;
+    text-decoration: underline;
+    cursor: default;
+    &--off {
+      text-decoration: line-through;
+    }
+  }
+
+.center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden{
+  display:none
+
+}
+
+.visible{
+  display:block;
+}
+
+.center-down{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  left: 50%;
+  top: 90%;
+}
+.buttonHolder{
+  margin:80px auto;
+  width:400px;
+}
+
+
+		.button{
+			background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+			background-image: linear-gradient(top, #f4f1ee, #fff);
+			border-radius: 50%;
+			box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, .3), inset 0px 4px 1px 1px white, inset 0px -3px 1px 1px rgba(204,198,197,.5);
+			float:left;
+			height: 70px;
+			margin: 0 30px 30px 0;
+			position: relative;
+			width: 70px;			
+			-webkit-transition: all .1s linear;
+			transition: all .1s linear;
+		}
+
+		.button:after{
+			color:#e9e6e4;
+			content: "";
+			display: block;
+			font-size: 30px;
+			height: 30px;
+			text-decoration: none;
+			text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+			position: absolute;
+			width: 30px;
+		}
+
+
+		.heart:after{
+			content: "\01F496";
+			left: 16px;
+			top: 16px;
+		}
+
+		.button:hover{
+			background-image: -webkit-linear-gradient(top, #fff, #f4f1ee);
+			background-image: linear-gradient(top, #fff, #f4f1ee);
+			color:#0088cc;
+		}
+
+		.heart:hover:after{
+			color:#f94e66;
+			text-shadow:0px 0px 6px #f94e66;
+		}
+
+
+		
+
+		.button:active{
+			background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+			background-image: linear-gradient(top, #efedec, #f7f4f4);
+			box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+		}
+
+		.button:active:after{
+			color:#dbd2d2;
+			text-shadow: 0px -1px 1px #bdb5b4, 0px 1px 1px white;
+		}
