@@ -5,18 +5,20 @@
         <link rel="stylesheet" type="text/css" href="./with-style.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/1.7.1/mo.umd.js" integrity="sha512-BfFnKnRfO/405sgiWrlAR1umMuJQbs37S8GS6GjZvUUAfH8Nc2qmVn0qjCIcmK4Q5WeJjLeMAnLrfsQj80cTQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="java-dla-ubogich.js"></script>
-<script>
-  $(".button").on("click", function(){
-    $("#result").load("./second.html");
-  });
-</script>
+
     </head>
 
 <body>
 
   <div class="center-top">
-    <h1>siema nara</h1>
+    href="https://fonts.googleapis.com/css?family=Open+Sans">
+<div class="cover">
+<div class="caption">
+  <h1><span class="appearing-text">wish you all best</span></h1>
+  <br/>
+  <h1 class="delayed-animation"><span class="appearing-text">Technology</span></h1>
+</div>
+</div>
   </div>
 
   <div class="center" id="result">
@@ -47,7 +49,12 @@
   </div>
       
 
-
-
+  <script src="java-dla-ubogich.js"></script>
+  <script>
+    $(".button").on("click", function(){
+      $("#result").load("./second.html");
+      $(".cover").css("display", "none")
+    });
+  </script>
 </body>
 </html>
